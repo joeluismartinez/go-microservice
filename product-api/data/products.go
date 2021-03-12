@@ -16,6 +16,11 @@ type Product struct {
 	DeletedOn   string  `json:"-"`
 }
 
+//Getproducts function
+func Getproducts() []*Product {
+	return productList
+}
+
 // productList is a hard coded list of products for this
 // example data source
 var productList = []*Product{
